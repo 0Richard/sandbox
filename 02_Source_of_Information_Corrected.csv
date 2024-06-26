@@ -1,0 +1,150 @@
+﻿Status,Key,Value,Description,Notes,Key_Category ,Service,Entity_Type,Entity_Name,Item_Type,Working_Notes
+Live,/wp-20-walet/ANDROID_BUNDLE_ID,com.fourdotzero.walletX,See https://play.google.com/console/u/0/developers/7220608786485378005/app-list,To be Refactored to ${VPC}/${STAGE}/ANDROID_BUNDLE_ID, com.fourdotzero.wallet1 | com.fourdotzero.wallet2,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,VALUE
+Live,/wp-20-walet/ACCOUNT_ID_LABEL,4.0 Account ID,wp-20-walet,-,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,VALUE,-
+Live,/wp-20-walet/APP_NAME,"pnpd-dev, west-dev, west, pnpd",TBD,To be Refactored to ${VPC}/${STAGE}/WALLET_NAME,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,VALUE,-
+Live,/wp-20-walet/BASE_API_URL,TBD,TBD,To be refactored to use existing BASE_API_URL,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,URL,-
+Live,/wp-20-walet/BASE_GQL_URL,TBD,TBD,To be refactored to use existing BASE_GQL_URL,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,URL,-
+Live,/wp-20-walet/CHROME_APP_ID,xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,The ID for Extension in the Chrome Web Store. This can be found in the [Chrome Web Store Developer Console](https://chrome.google.com/webstore/devconsole/) (edite,To be Refactored to ${VPC}/${STAGE}/CHROME_APP_ID,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,VALUE,-
+Live,/wp-20-walet/CHROME_WEB_STORE_URL,https://chromewebstore.google.com/detail/name-of-app/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,The URL for Extension in the Chrome Web Store.,To be Refactored to ${VPC}/${STAGE}/CHROME_WEB_STORE_URL,ENV_VAR,wp-23-sdk-js,WALLET_PROVIDER,ALL,VALUE,-
+Live,/wp-20-walet/COGNITO_CLIENT_ID,xxxxxxxxxxxxx,TBD,To be Refactored to ${VPC}/${STAGE}/COGNITO_CLIENT_ID_WALLET,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,VALUE,-
+Live,/wp-20-walet/COGNITO_USER_POOL_ID,0_1X2X3X4X5,TBD,To be Refactored to ${VPC}/${STAGE}/COGNITO_USERPOOL_WALLET,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,VALUE,-
+Live,/wp-20-walet/FIREBASE_ANDROID_APP_ID,x:xxxxxxxxxxxx:android:xxxxxxxxxxxxxxxxxxxxxx,Both found in the Firebase console -> Project settings. iOS builds share the same value.,To be Refactored to ${VPC}/${STAGE}/FIREBASE_ANDROID_APP_ID,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,VALUE,-
+Live,/wp-20-walet/FIREBASE_IOS_APP_ID,x:xxxxxxxxxxxx:ios:xxxxxxxxxxxxxxxxxxxxxx,Both found in the Firebase console -> Project settings. iOS builds share the same value.,To be Refactored to ${VPC}/${STAGE}/FIREBASE_IOS_APP_ID,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,VALUE,-
+Live,/wp-20-walet/IOS_BUNDLE_IDENTIFIER,com.fourdotzero.walletX,See https://developer.apple.com/account/resources/identifiers/list,To be Refactored to ${VPC}/${STAGE}/IOS_BUNDLE_IDENTIFIER, com.fourdotzero.wallet1 | com.fourdotzero.wallet2,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,VALUE
+Live,/wp-20-walet/IOS_PROVISION_PROFILE_NAME,${VPC}-wp-20-walet-IOS_PROVISION_PROFILE,See https://developer.apple.com/account/resources/profiles/list,To be Refactored to ${VPC}/${STAGE}/IOS_PROVISION_PROFILE_NAME,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,VALUE,-
+Live,/wp-20-walet/NAME_LEGAL,Fourdotzero Software Limited,wp-20-walet,-,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,VALUE,-
+Live,/wp-20-walet/NAME_LONG,PNPD | Fourdotpay,wp-20-walet,-,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,VALUE,-
+Live,/wp-20-walet/NAME_SHORT,PNPD | Fourdotpay,wp-20-walet,-,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,VALUE,-
+Live,/wp-20-walet/TEAM_ID,K5M3V8X5CC,used by both wp-20-walet and wp-2-setmt,To be refactored to use existing APPLE_TEAM_ID,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,VALUE,-
+Live,ACCOUNT_CURRENCY_TABLE_NAME,${VPC-STAGE}-685_dbt_AccountCurrency_wp,DynamoDb table,-,ENV_VAR,wp-1-envmt,WALLET_PROVIDER,ALL,TABLE,-
+Live,ACCOUNT_TABLE_NAME,${VPC-STAGE}-675_dbt_Account_wp,DynamoDb table,-,ENV_VAR,wp-1-envmt,WALLET_PROVIDER,ALL,TABLE,-
+Live,ANDROID_KEYSTORE_FILE,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,SECRET,-
+Live,ANDROID_KEYSTORE_FILE_BASE64,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,SECRET,-
+Live,ANDROID_KEYSTORE_PASSWORD,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,SECRET,-
+Live,ANDROID_SERVICE_ACCOUNT_BASE64,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,SECRET,-
+Live,ANDROID_SIGNING_KEY_ALIAS,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,SECRET,-
+Live,ANDROID_SIGNING_KEY_PASSWORD,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,SECRET,-
+Clarify,API Prefix,api,api.{DOMAIN_NAME},-,ENV_VAR,ALL,ALL,ALL,URL,-
+Live,API_CERTIFICATE_ARN,arn:aws:acm:us-east-1:770440470799:certificate/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx,ARN of the certificate for the BASE_API_URL (Global Region US-EAST-1),-,CONFIG_DATA,ALL,ALL,ALL,URL,-
+Clarify,API_PLAYGROUND_PREFIX,play.api,play.api.{DOMAIN_NAME},-,ENV_VAR,ALL,ALL,ALL,URL,-
+Clarify,APPLE_TEAM_ID,K5M3V8X5CC,???,-,ENV_VAR,wp-3-paymt,WALLET_PROVIDER,Avalanche,ID,-
+Clarify,Apple_APN_Notification.p8,In AWS Secrets,APNs Key for authenticating with Apple's notification service. Enables push notifications to Apple devices. ,-,ENV_VAR,wp-20-walet,WALLET_PROVIDER,All,SECRET,-
+Live,BASE_API_URL,https://api.${STAGE}.${DOMAIN_NAME},URL used by mobile / dashboard applications to connect to PAYMENT_SERVICE REST API,-,ENV_VAR,wp-3-paymt,ALL,ALL,URL,-
+Planned,BASE_BI_URL,https://bi.${STAGE}.${DOMAIN_NAME},URL used by dashboard applications to connect to BI_SERVICE REST API,https://qktlh7o7pk.execute-api.eu-west-2.amazonaws.com/develop | https://de4y1iirga.execute-api.eu-west-2.amazonaws.com/pnpd-develop | https://jm3f1hyvpc.execute-api.eu-west-2.amazonaws.com/west-develop,ENV_VAR,PAYMENT_SERVICE ,ALL,ALL,URL,-
+Planned,BASE_CRM_API_URL,https://api.${STAGE}.${DOMAIN_NAME}/crm,URL used by wp-23-sdk-js to connect to CRM API,-,ENV_VAR,core-3-issue,CORE,PNP,URL,-
+Live,BASE_GQL_URL,https://gql.${STAGE}.${DOMAIN_NAME}/graphql,URL used by mobile / dashboard applications to connect to PAYMENT_SERVICE GQL API,-,ENV_VAR,PAYMENT_SERVICE ,ALL,ALL,URL,-
+Live,BASE_LMS_API_URL,https://api.${STAGE}.${DOMAIN_NAME}/lms,URL used by wp-23-sdk-js to connect to LMS API,-,ENV_VAR,core-3-issue,CORE,PNP,URL,-
+Live,BASE_RETAILER_API_URL,https://retailer.api.${STAGE}.${DOMAIN_NAME},URL used by wp-23-sdk-js to connect to Retailer API,-,ENV_VAR,wp-6-ecomm,ALL,ALL,URL,-
+Live,BASE_SDK_URL,https://sdk.${STAGE}.${DOMAIN_NAME},URL used by wp-23-sdk-js to host the SDK and Playground,-,ENV_VAR,poc-retailer-spa NEEDS RENAMING,ALL,ALL,URL,-
+Live,BASE_VERIFY_URL,https://verify.${STAGE}.${DOMAIN_NAME},URL used to host the SPA for verifying new customer email address during sign-up,-,ENV_VAR,wp-1a-signup-verify-spa,ALL,ALL,URL,-
+Live,BIRTH_BLOCK,5207469 Linked_ID 0x021A98905F9d3C47BCC5D823ceC6b03DaD3Efd974693731   Linked_ID: 0x031d7ad0D660B81f1a7e09418521bAB48DD999d0,Block ID for first ERC20 Contract Instantiation,-,CONFIG_DATA,BI_SERVICE,ALL,ALL,TABLE_COLUMN,-
+Clarify,BUNDLE_ID,com.fourdotzero.walletX,???,-,ENV_VAR,PAYMENT_SERVICE ,WALLET_PROVIDER,ALL,Name,-
+Clarify,BUSINESS_INTEL PREFIX,bi,bi.{DOMAIN_NAME},-,ENV_VAR,ALL,ALL,ALL,URL,-
+Live,CHROME_CLIENT_ID,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,MOBILE,WALLET_PROVIDER,ALL,SECRET,-
+Live,CHROME_CLIENT_SECRET,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,MOBILE,WALLET_PROVIDER,ALL,SECRET,-
+Live,CHROME_PNPD_APP_ID,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,MOBILE,WALLET_PROVIDER,ALL,SECRET,-
+Live,CHROME_REFRESH_TOKEN,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,MOBILE,WALLET_PROVIDER,ALL,SECRET,-
+Live,CHROME_WEST_APP_ID,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,MOBILE,WALLET_PROVIDER,ALL,SECRET,-
+Live,CONFIRMATION_TABLE_NAME,${VPC-STAGE}-640_dbt_Confirmation_wp,DynamoDb table,-,ENV_VAR,wp-1-envmt,WALLET_PROVIDER,ALL,TABLE,-
+Planned,CONTRACT_DECIMALS ,6,Number of Decimals the ERC20 contract currency supports,-,CONFIG_DATA,ALL,ALL,ALL,TABLE_COLUMN,-
+Live,CONTRACT_ID,0x021A98905F9d3C47BCC5D823ceC6b03DaD3Efd970x031d7ad0D660B81f1a7e09418521bAB48DD999d0 BIRTH_BLOCK: 4693731,Id of ERC 20 Contract,-,CONFIG_DATA,PAYMENT_SERVICE ,ALL,ALL,ID,-
+Live,CORE_BUSINESS_INTEL_REPO,https://github.com/fourdotzero/Business_Intel,Github Repo ID,-,-,BI_SERVICE,CORE,PNP,URL,-
+Live,CORE_CORE_SERVICE_REPO,https://github.com/fourdotzero/core,Github Repo ID,-,-,PAYMENT_SERVICE,CORE,PNP,URL,-
+Live,CORE_DASHBOARD_REPO,https://github.com/fourdotzero/Core_Dashboard,Github Repo ID,-,-,DASHBOARD,CORE,PNP,URL,-
+Planned,CORE_FEE_DLT_ID_PBK,0x9C510087747B8AF985e76738bE360e3Ea0f8359b,DLTPublicKey_PingNpay Fee Account - Acc 1,Wallet Table DLT_ID,CONFIG_DATA,PAYMENT_SERVICE ,CORE,PNP,VALUE,-
+Planned,CORE_FEE_DLT_ID_PK,See AWS Secrets Manager,DLTPrivateKey_PingNpay Fee Account - Acc 1 - 0x9C510087747B8AF985e76738bE360e3Ea0f8359b,FEE_DLT_ID_PK,CONFIG_DATA,PAYMENT_SERVICE ,CORE,PNP,SECRET,-
+Planned,CORE_OP_DLT_ID_PBK,0x9C510087747B8AF985e76738bE360e3Ea0f8359b,DLTPublicKey_PingNpay Op Account - Acc 1,Wallet Table DLT_ID,CONFIG_DATA,PAYMENT_SERVICE ,CORE,PNP,VALUE,-
+Planned,CORE_OP_DLT_ID_PK,See AWS Secrets Manager,DLTPrivateKey_PingNpay Op Account - Acc 1 - 0x9C510087747B8AF985e76738bE360e3Ea0f8359b,OP_DLT_ID_PK,CONFIG_DATA,PAYMENT_SERVICE ,CORE,PNP,SECRET,-
+Live,CURRENCY_TABLE_NAME,${VPC-STAGE}-650_dbt_Currency_${ENTITY_TYPE}                   ,DynamoDb table,-,ENV_VAR,wp-1-envmt,WALLET_PROVIDER,ALL,TABLE,-
+Deprecated,CUSTCURRACCOUNT_TABLE_NAME,${VPC-STAGE}-665_dbt_CustomerCurrencyAccount_wp,DynamoDb table,-,ENV_VAR,wp-1-envmt,WALLET_PROVIDER,ALL,TABLE,-
+Live,CUSTOMER_ACCOUNT_TABLE_NAME,${VPC-STAGE}-680_dbt_CustomerAccount_wp,DynamoDb table,-,ENV_VAR,wp-1-envmt,WALLET_PROVIDER,ALL,TABLE,-
+Live,CUSTOMER_TABLE_NAME,${VPC-STAGE}-670_dbt_Customer_wp,DynamoDb table,-,ENV_VAR,wp-1-envmt,WALLET_PROVIDER,ALL,TABLE,-
+Planned,DASHBOARD_HOSTNAME_PREFIX ,dashboard,Service component name ,-,ENV_VAR,ALL,ALL,A,URL,Should we include URL Constructors in SoI or Naming Conventions?
+Planned,DASHBOARD_URL,https://dashboard.${STAGE}.${DOMAIN_NAME},URL used by Admin to access Adminstration Dashboard,-,ENV_VAR,DASHBOARD,ALL,ALL,URL,-
+Planned,DEV_DOCS_URL,https://docs.${STAGE}.${DOMAIN_NAME},"Entity domain name, for accessability of supported services counterparty access",-,ENV_VAR,ALL,ALL,ALL,URL,-
+Planned,DEVELOPMENT_PREFIX,dev,URL prefix for development environment ,-,ENV_VAR,ALL,ALL,ALL,Name,Should we include URL Constructors in SoI or Naming Conventions?
+Live,DLT_ASSET_CODE,pGB,pNp e-money tokens issues on the DLT Contract,-,ENV_VAR,ALL,ALL,ALL,TABLE_COLUMN,"No value endpoint in DB contract,wallet or network, is this correct?"
+Live,DLT_CHAIN_ID,43113,DLT Chain ID,-,CONFIG_DATA,ALL,ALL,ALL,TABLE_COLUMN,Clarify if used by BI Service
+Live,DLT_CONTRACT_TABLE_NAME,${VPC-STAGE}-625_dbt_DltContract_${ENTITY_TYPE},TBD,-,ENV_VAR,ALL,ALL,ALL,TABLE,-
+Live,DLT_CONTRACT_TYPE,ERC20-Token,Type of DLT Contract,-,CONFIG_DATA,BI_SERVICE,ALL,ALL,TABLE_COLUMN,-
+Live,DLT_ENV_TYPE,TESTNET,DLT Environment Type ,-,CONFIG_DATA,BI_SERVICE,ALL,ALL,TABLE_COLUMN,Clarify if used by BI Service
+Live,DLT_EXPLORER_API_KEY,DW4NQB2UVCB5KSPV8TRTEM3J6FN9Z77M6 ,API Key for DLT Explorer,The value is used by wp-2. This is another with no know usage UGJY32ERKNJB5UUFTS9GPH5P8HTSNYWCGK,CONFIG_DATA,BI_SERVICE,ALL,ALL,TABLE_COLUMN,Determine if East or WEST
+Live,DLT_EXPLORER_API_URL,https://api-testnet.snowtrace.io/,URL of DLT Explorer,-,CONFIG_DATA,BI_SERVICE,ALL,ALL,TABLE_COLUMN,-
+Planned,DLT_GAS_MULTIPLIER,1.4,Multiplier on GAS fees to ensure rapid transaction settlement,-,CONFIG_DATA,PAYMENT_SERVICE ,ALL,ALL,TABLE_COLUMN,-
+Live,DLT_ID,???,Public Key of a DLT Wallet,-,CONFIG_DATA,BI_SERVICE,ALL,ALL,TABLE_COLUMN,Should we use OP_DLT_ID instead?
+Live,DLT_NAME,AVALANCHE,DLT Name,-,CONFIG_DATA,BI_SERVICE,ALL,ALL,TABLE_COLUMN,Clarify if used by BI Service
+Live,DLT_NETWORK_NATIVE_ASSET,AVAX,DLT Native Asset Name,-,CONFIG_DATA,BI_SERVICE,ALL,ALL,TABLE_COLUMN,Clarify if used by BI Service
+Live,DLT_NETWORK_TABLE_NAME,${VPC-STAGE}-620_dbt_DltNetwork_${ENITITY_TYPE},DynamoDb table,-,ENV_VAR,ALL,ALL,ALL,TABLE,-
+Live,DLT_THIRD_PARTY_BALANCE_HISTORY_TABLE_NAME,${VPC-STAGE}-635_dbt_DltThirdPartyBalanceHistory_${ENTITY_NAME},DynamoDb table,-,ENV_VAR,BI_SERVICE,CORE,PNP,TABLE,-
+Live,DLT_THIRD_PARTY_BALANCE_TABLE_NAME,${VPC-STAGE}-655_dbt_DltThirdPartyBalance_core,DynamoDb table,-,ENV_VAR,PAYMENT_SERVICE ,CORE,PNP,TABLE,-
+Live,DLT_WALLET_TABLE_NAME,${VPC-STAGE}-615_dbt_DltWallet_${ENTITY_TYPE},DynamoDb table,-,ENV_VAR,ALL,ALL,ALL,TABLE,-
+Live,DOC_prefix,docs,docs.{DOMAIN_NAME},-,ENV_VAR,ALL,ALL,ALL,URL,-
+Planned,DOCUMENT_FILE_LOCATION,TBD ,Documentation hosting location for output of autogenerated documententation,-,ENV_VAR,ALL,ALL,ALL,URL,-
+Live,DOMAIN_NAME,net.fourdotzero.io | pnpd.io | fourdotpay.io,"Entity domain name, for accessability of supported services counterparty access",-,ENV_VAR,ALL,ALL,ALL,URL,-
+Planned,ENTITY_NAME,CORE | WEST | PNPD,Unique pNp name for entity on pNp Network,-,ENV_VAR,PAYMENT_SERVICE ,ALL,ALL,Name,-
+Planned,ENTITY_TYPE,"[WP, WD, CORE]",Type of Entity on pNp Network,-,ENV_VAR,PAYMENT_SERVICE ,ALL,ALL,Name,-
+Planned,FEES_TABLE_NAME,${VPC-STAGE}-640_dbt_Fees_core,TBD,-,ENV_VAR,core-1-envmt,CORE,ALL,TABLE,-
+Live,FIREBASE_CLI_TOKEN,In AWS Secrets,Used to distribute the application to the Chrome Web Store,-,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,SECRET,-
+Live,GAS_LIMIT,TBD,Limit of GAS to expend per transaction,-,CONFIG_DATA,PAYMENT_SERVICE ,ALL,ALL,TABLE_COLUMN,-
+Live,GQL Prefix,gql,gql.{DOMAIN_NAME},-,ENV_VAR,ALL,ALL,ALL,URL,-
+Live,GQL_CERTIFICATE_ARN,arn:aws:acm:us-east-1:770440470799:certificate/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx,ARN of the certificate for the BASE_GQL_URL (Global Region US-EAST-1),-,CONFIG_DATA,ALL,ALL,ALL,URL,-
+Planned,GQL_PLAYGROUND_PREXIX,play.gql,play.gql.{DOMAIN_NAME},-,ENV_VAR,ALL,ALL,ALL,URL,-
+Live,HMAC_SECRET_KEY_PNP,See Param_Store ,CORE HMAC Key,-,ENV_VAR,PAYMENT_SERVICE ,ALL,ALL,SECRET,-
+Live,HMAC_SECRET_KEY_PNPD,See Param_Store ,PNPD Wallet Providers HMAC Key,-,ENV_VAR,PAYMENT_SERVICE ,ALL,ALL,SECRET,-
+Live,HMAC_SECRET_KEY_WEST,See Param_Store ,WEST Wallet Providers HMAC Key,-,ENV_VAR,PAYMENT_SERVICE ,ALL,ALL,SECRET,-
+Live,HOSTED_ZONE_ID,zxxxxxx,Route 53 Hosted Zone Id of the  DOMAIN_NAME ,-,CONFIG_DATA,ALL,ALL,ALL,VALUE,-
+Live,IOS_APPSTORE_CONNECT_API_KEY_ID,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,MOBILE,WALLET_PROVIDER,ALL,SECRET,-
+Live,IOS_APPSTORE_CONNECT_ISSUER_ID,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,MOBILE,WALLET_PROVIDER,ALL,SECRET,-
+Live,IOS_APPSTORE_CONNECT_PRIVATE_KEY_BASE64,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,MOBILE,WALLET_PROVIDER,ALL,SECRET,-
+Live,IOS_KEYCHAIN_PASSWORD,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,MOBILE,WALLET_PROVIDER,ALL,SECRET,-
+Live,IOS_P12_DISTRIBUTION_CERT_BASE64,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,MOBILE,WALLET_PROVIDER,ALL,SECRET,-
+Live,IOS_P12_DISTRIBUTION_CERT_PASSWORD,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,MOBILE,WALLET_PROVIDER,ALL,SECRET,-
+Live,IOS_PNPD_PROVISION_PROFILE_BASE64,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,MOBILE,WALLET_PROVIDER,ALL,SECRET,-
+Live,IOS_PROVISION_PROFILE_BASE64,In AWS Secrets,Mobile application build and deploys Credentials ,-,ENV_VAR,MOBILE,WALLET_PROVIDER,ALL,SECRET,-
+Live,LMS_LICENSE_TABLE_NAME,${VPC-STAGE}-660_dbt_LmsLicense_core,DynamoDb table,-,ENV_VAR,PAYMENT_SERVICE ,CORE,PNP,TABLE,-
+Live,LMS_BROWSER_TABLE_NAME,${VPC-STAGE}-661_dbt_LmsBrowser_core,DynamoDb table,-,ENV_VAR,PAYMENT_SERVICE ,CORE,PNP,TABLE,-
+Live,LOG_LEVEL,"[error, debug, info]",Level of Logging output required for a service,-,ENV_VAR,ALL,ALL,ALL,VALUE,-
+Planned,LOGGING_END_POINT,TBD ,URL address for logging output,-,ENV_VAR,ALL,ALL,ALL,URL,-
+Planned,LOGGING_END_POINT_PASSWORD,TBD,Logging system access password ,-,ENV_VAR,ALL,ALL,ALL,VALUE,-
+Planned,LOGGING_END_POINT_USERNAME,TBD,Logging system access username,-,ENV_VAR,ALL,ALL,ALL,VALUE,-
+Live,MOBILE_APP,https://github.com/fourdotzero/wp-20-wallet-application,Github Repo ID,-,n/a,wp-20-walet,WALLET_PROVIDER,ALL,URL,-
+Planned,NETWORK_FEE_DLT_ID_PBK,As 'CORE_OP_DLT_ID_PBK',TBD,-,-,-,-,-,-,-
+Planned,NETWORK_FEE_DLT_ID_PK,As 'CORE_OP_DLT_ID_PK',TBD,-,-,-,-,-,-,-
+Live,NETWORK_FEE_ID_PBK,0xaab1563DD2f2A082e93576BAdcD8C08b08a8b5b0,DLTPublicKey_Avalanche Network Fee Account,-,CONFIG_DATA,PAYMENT_SERVICE ,DLT_NETWORK,Avalanche,WALLET_PBK,-
+Planned,NETWORK_FEE_ID_PK,See Param_Store ,DLTPrivateKey_Avalanche Network Fee Account - 0xaab1563DD2f2A082e93576BAdcD8C08b08a8b5b0,-,CONFIG_DATA,PAYMENT_SERVICE ,DLT_NETWORK,AVALANCHE,WALLET_PK,-
+Live,network_id/ava_test,FA9D1E7F-C3FE-48AB-9050-D20EE25B30D8,Network id for collector service to collect from,-,ENV_VAR,PAYMENT_SERVICE,ALL,ALL,VALUE,-
+Live,NOTIFICATION_TABLE_NAME,${VPC-STAGE}-655_dbt_Notification_wp,DynamoDb table,-,ENV_VAR,wp-1-envmt,WALLET_PROVIDER,ALL,TABLE,-
+Live,NOTIFICATIONDEVICE_TABLE_NAME,${VPC-STAGE}-645_dbt_NotificationDevice_wp,DynamoDb table,-,ENV_VAR,wp-1-envmt,WALLET_PROVIDER,ALL,TABLE,-
+Live,NOTIFICATIONS_APN_KEY_ID,See Param_Store ,Is the Key ID corresponding to NOTIFICATIONS_APN_PRIVATE_KEY ,-,ENV_VAR,PAYMENT_SERVICE,WALLET_PROVIDER,ALL,Value,-
+Live,NOTIFICATIONS_APN_PRIVATE_KEY,See Param_Store ,Is the PK used to sign the authorisation token used for calling the APN service.,-,ENV_VAR,PAYMENT_SERVICE,WALLET_PROVIDER,ALL,SECRET,-
+Live,NOTIFICATIONS_FIREBASE_CERT,See Param_Store ,Firebase Cloud Messaging Certificate ,-,ENV_VAR,PAYMENT_SERVICE ,WALLET_PROVIDER,ALL,SECRET,-
+Planned,PNPD_OP_DLT_ID_PBK,0x49C4Bb90a264f2496De0358F665437B00a54c19d,DLTPublicKey_PNPD Wallet Provider Op Account (WP1)_Acc 2,Wallet Table DLT_ID,CONFIG_DATA,PAYMENT_SERVICE ,WALLET_PROVIDER,PNPD,VALUE,-
+Planned,PNPD_OP_DLT_ID_PK,See AWS Secrets Manager,DLTPrivateKey_PNPD Wallet Provider Op Account (WP1)_Acc 2 - 0x49C4Bb90a264f2496De0358F665437B00a54c19d,Currently DLT_OP_PK in SSM,CONFIG_DATA,PAYMENT_SERVICE ,WALLET_PROVIDER,PNPD,SECRET,-
+Planned,PNPD_WD_FEE_DLT_ID_PBK,0xF03E8A2eE0Ab208ac14C3c3B88E1c3F7F0b25720,DLTPublicKey_PNPD Wallet Developer Account - Acc 4,Wallet Table DLT_ID,CONFIG_DATA,PAYMENT_SERVICE ,WALLET_DEVELOPER,PNPD,VALUE,-
+Planned,PNPD_WD_FEE_DLT_ID_PK,See AWS Secrets Manager,DLTPrivateKey_PNPD Wallet Developer Account - Acc 4 - 0xF03E8A2eE0Ab208ac14C3c3B88E1c3F7F0b25720,-,CONFIG_DATA,PAYMENT_SERVICE ,WALLET_DEVELOPER,PNPD,SECRET,-
+Planned,PNPD_WP_FEE_DLT_ID_PBK,0x6730569F3ADE41A7Ab26169Ae2cF7F3b30797D79,DLTPublic Key_PNPD Wallet Provider Fee Account_Acc 3,Wallet Table DLT_ID,CONFIG_DATA,PAYMENT_SERVICE ,WALLET_PROVIDER,PNPD,VALUE,-
+Planned,PNPD_WP_FEE_DLT_ID_PK,See AWS Secrets Manager,DLTPrivateKey_PNPD Wallet Provider Fee Account_Acc 3 - 0x6730569F3ADE41A7Ab26169Ae2cF7F3b30797D79,-,CONFIG_DATA,PAYMENT_SERVICE ,WALLET_PROVIDER,PNPD,SECRET,-
+Live,QR_CODE_SECRET,In AWS Secrets,Secret for encrypting and de-crypting QR and Payment Link codes,-,ENV_VAR,wp-20-walet,WALLET_PROVIDER,ALL,SECRET,-
+Live,SDK_CERTIFICATE_ARN,arn:aws:acm:us-east-1:770440470799:certificate/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx,ARN of the certificate for the BASE_SDK_URL (Global Region US-EAST-1),-,CONFIG_DATA,ALL,ALL,ALL,URL,-
+Live,SMTP_API_KEY,See AWS Secrets Manager,Generated in Mailgun,Secret ${VPC}-${STAGE}-wp-0-vault,CONFIG_DATA,wp-6-ecomm,WALLET_PROVIDER,ALL,SECRET,-
+Planned,SPARE_1_PBK,0x549B2475E4F2022076C885a8c7Ee62824b433773,DLT Wallet address Public Key,-,CONFIG_DATA,PAYMENT_SERVICE ,n/a,n/a,WALLET_PBK,-
+Planned,SPARE_1_PK,See Param_Store ,DLTPrivateKey_DLT Wallet address Public Key - 0x549B2475E4F2022076C885a8c7Ee62824b433773,-,CONFIG_DATA,PAYMENT_SERVICE ,n/a,n/a,WALLET_PK,-
+Planned,SPARE_2_PBK,0x248dd71D09B4B9a2411b53D6A64cD5194d2bc014,DLT Wallet address Public Key,-,CONFIG_DATA,PAYMENT_SERVICE ,n/a,n/a ,WALLET_PBK,-
+Planned,SPARE_2_PK,See Param_Store ,DLTPrivateKey_Wallet address Public Key - 0x248dd71D09B4B9a2411b53D6A64cD5194d2bc014,-,CONFIG_DATA,PAYMENT_SERVICE ,n/a,n/a ,WALLET_PK,-
+Live,STAGE,"[prod,dev,qa]","Environment Name can be [prod, dev, qa]",-,CONFIG_DATA,ALL,ALL,ALL,VALUE,-
+Planned,SUSPENSE_CURRENCY_ACCOUNT,suspense-gbp-personal,Account on the CCA table for suspense transactions,-,ENV_VAR,PAYMENT_SERVICE,WALLET_PROVIDER,ALL,VALUE,-
+Live,TEST_RPC_URL,https://api.avax-test.network/ext/bc/C/rpc,RPC URI of TESTNET,-,CONFIG_DATA,ALL,ALL,ALL,TABLE_COLUMN,-
+Live,THIRD_PARTY_ENTITY_TABLE_NAME,${VPC-STAGE}-610_dbt_ThirdPartyEntity_${ENITITY_TYPE},DynamoDb table,-,ENV_VAR,ALL,ALL,ALL,TABLE,-
+Live,TOTAL_USER_BALANCE_HISTORY_TABLE_NAME,${VPC-STAGE}-630_dbt_TotalUserBalanceHistory_wp,TBD,-,ENV_VAR,wp-4-Busin,WALLET_PROVIDER,ALL,TABLE,-
+Live,TRANSACTION_TABLE_NAME,${VPC-STAGE}-660_dbt_Transaction_wp,DynamoDb table,-,ENV_VAR,wp-1-envmt,WALLET_PROVIDER,ALL,TABLE,-
+Live,TREASURY_TABLE_NAME,${VPC-STAGE}-635_dbt_Treasury_core,DynamoDb table,-,ENV_VAR,core-1-envmt,CORE,ALL,TABLE,-
+Live,VERIFY_CERTIFICATE_ARN,arn:aws:acm:us-east-1:770440470799:certificate/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx,ARN of the certificate for the BASE_VERIFY_URL (Global Region US-EAST-1),-,CONFIG_DATA,ALL,ALL,ALL,URL,-
+Live,WALLET_PROVIDER_BUSINESS_INTEL_REPO,https://github.com/fourdotzero/wp-4-business-intelligence,Github Repo ID,-,n/a,BI_SERVICE,WALLET_PROVIDER,ALL,URL,-
+Live,WALLET_PROVIDER_TABLE_NAME,${VPC-STAGE}-650_dbt_WalletProvider_core,DynamoDb table,-,ENV_VAR,core-1-envmt,CORE,ALL,TABLE,-
+Planned,WEST_OP_DLT_ID_PBK,0x652109D3973fDfAA7cA7d892b079B97C6a51DDE1,DLTPublicKey_West Wallet Provider Op Account (WP2) - Acc 5,Wallet Table DLT_ID,CONFIG_DATA,PAYMENT_SERVICE ,WALLET_PROVIDER,WEST,VALUE,-
+Planned,WEST_OP_DLT_ID_PK,See AWS Secrets Manager,DLTPrivateKey_West Wallet Provider Op Account (WP2) - Acc 5 - 0x652109D3973fDfAA7cA7d892b079B97C6a51DDE1,Currently DLT_OP_PK in SSM,CONFIG_DATA,PAYMENT_SERVICE ,WALLET_PROVIDER,WEST,SECRET,-
+Planned,WEST_WD_FEE_DLT_ID_PBK,0x092bbF0395039DBfe2a164e739f568589F4E2901,DLTPublicKey_West Wallet Developer Account - Acc 7,Wallet Table DLT_ID,CONFIG_DATA,PAYMENT_SERVICE ,WALLET_DEVELOPER,WEST,VALUE,-
+Planned,WEST_WD_FEE_DLT_ID_PK,See AWS Secrets Manager,DLTPrivateKey_West Wallet Developer Account - Acc 7 - 0x092bbF0395039DBfe2a164e739f568589F4E2901,FEE_DLT_ID_PK,CONFIG_DATA,PAYMENT_SERVICE ,WALLET_DEVELOPER,WEST,SECRET,-
+Planned,WEST_WP_FEE_DLT_ID_PBK,0x06EA47e8a0F5E86c6a89AC7F4B9bB34dBfc63bF0,DLTPublicKey_West Wallet Provider Fee Account - Acc 6,Wallet Table DLT_ID,CONFIG_DATA,PAYMENT_SERVICE ,WALLET_PROVIDER,WEST,VALUE,-
+Planned,WEST_WP_FEE_DLT_ID_PK,See AWS Secrets Manager,DLTPrivateKey_West Wallet Provider Fee Account - Acc 6 - 0x06EA47e8a0F5E86c6a89AC7F4B9bB34dBfc63bF0,FEE_DLT_ID_PK,CONFIG_DATA,PAYMENT_SERVICE ,WALLET_PROVIDER,WEST,SECRET,-
+Live,WP_NAME,PNPD | WEST,Unique pNp name for entity on pNp Network,-,ENV_VAR,PAYMENT_SERVICE ,WALLET_PROVIDER,ALL,Name,-
